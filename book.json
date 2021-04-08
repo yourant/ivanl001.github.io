@@ -1,0 +1,164 @@
+{
+    "title": "不二技术博客",
+    "author": "不二",
+    "description": "不二 搭建的 Gitbook 个人博客",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "github": "https://github.com/ivanl001",
+	        "gitlab":"https://gitlab.com/ivanl001",
+	        "gitee":"https://gitee.com/ivanl001"
+        }
+    },
+    "plugins": [
+        "toc",
+        "-lunr",
+        "-search",
+        "search-plus",
+        "splitter",
+        "-sharing",
+        "sharing-plus",
+        "expandable-chapters-small",
+        "anchor-navigation-ex",
+        "edit-link-plus",
+        "code",
+        "chart",
+        "favicon-absolute",
+        "github-buttons",
+        "advanced-emoji",
+        "sitemap-general",
+        "copyright",
+        "tbfed-pagefooter",
+        "mygitalk",
+        "donate",
+        "icp",
+        "diff",
+        "simple-mind-map",
+        "hide-element",
+        "audio_image",
+        "mermaid-gb3",
+        "baidu-tongji-with-multiple-channel",
+        "google-tongji-with-multiple-channel"
+    ],
+
+
+    "pluginsConfig": {
+
+        "donate": {
+            "wechat": "wechatpay.jpg",
+            "alipay": "alipay.jpg",
+            "title": "",
+            "button": "赏",
+            "alipayText": "支付宝",
+            "wechatText": "微信"
+        },
+
+        "favicon-absolute": {
+            "favicon": "favicon.ico",
+            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png"
+        },
+
+        "toc": {
+            "addClass": true,
+            "className": "toc"
+        },
+
+
+        "copyright": {
+            "site": "https://github.com/ivanl001/blog.git",
+            "author": "不二",
+            "website": "不二技术博客",
+            "image": "",
+            "copyProtect": false
+        },
+
+        "github-buttons": {
+            "buttons": [{
+                "user": "ivanl001",
+                "repo": "https://github.com/ivanl001/blog.git",
+                "type": "star",
+                "size": "small"
+            }]
+        },
+
+        "tbfed-pagefooter": {
+            "copyright": "&copy 不二",
+            "modify_label": "文件修订时间: ",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+
+        "sharing": {
+            "douban": true,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": true,
+            "qzone": true,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "facebook", "google", "twitter",
+                "weibo", "instapaper", "linkedin",
+                "pocket", "stumbleupon"
+            ]
+        },
+
+
+        "edit-link-plus": {
+            "base": {
+              "snowdreams1006.github.io":"https://github.com/snowdreams1006/snowdreams1006.github.io/edit/master",
+              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/snowdreams1006.gitlab.io/edit/master",
+              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/snowdreams1006/edit/master"
+            },
+            "defaultBase": "https://github.com/snowdreams1006/snowdreams1006.github.io/edit/master",
+            "label": "编辑本页"
+        },
+
+        "chart": {
+            "type": "c3"
+        },
+
+
+        "sitemap-general": {
+            "prefix": "https://snowdreams1006.github.io/"
+        },
+
+        
+        "mygitalk": {
+            "clientID": "3d8b5499512dfc769dcc",
+            "clientSecret": "72387e663a746fd79685ed71a74a99e0c27ba530",
+            "repo": "ivanl001.github.io",
+            "owner": "ivanl001",
+            "admin": ["ivanl001"],
+            "distractionFreeMode": false,
+            "proxy": "https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token"
+
+        },
+
+
+        "icp": {
+            "number": "沪ICP备00000000号(无)",
+            "link": "http://www.beian.gov.cn/"
+        },
+
+
+        "hide-element": {
+            "elements": ["a.gitbook-link[href='https://www.gitbook.com']"]
+        },
+
+
+        "simple-mind-map":{
+            "preset": "colorful"
+        }
+    }
+}

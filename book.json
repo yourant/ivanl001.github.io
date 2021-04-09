@@ -70,7 +70,7 @@
             "author": "不二",
             "website": "不二技术博客",
             "image": "",
-            "copyProtect": false
+            "copyProtect": true
         },
 
         "github-buttons": {
@@ -130,7 +130,7 @@
 
 
         "sitemap-general": {
-            "prefix": "https://snowdreams1006.github.io/"
+            "prefix": "https://ivanl001.github.io/"
         },
 
         

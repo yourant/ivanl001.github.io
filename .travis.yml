@@ -6,7 +6,7 @@ cache: npm
 notifications:
   email:
     recipients:
-      - abc@gmail.com # 设置通知邮件
+      - ivanl001@163.com # 设置通知邮件
     on_success: change
     on_failure: always
 

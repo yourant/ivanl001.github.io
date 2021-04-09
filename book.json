@@ -12,15 +12,15 @@
         }
     },
     "plugins": [
-        "toc",
         "-lunr",
         "-search",
+        "-sharing",
+        "anchor-navigation-ex",
+        "toc",
         "search-plus",
         "splitter",
-        "-sharing",
         "sharing-plus",
         "expandable-chapters-small",
-        "anchor-navigation-ex",
         "edit-link-plus",
         "code",
         "chart",
@@ -44,6 +44,20 @@
 
 
     "pluginsConfig": {
+
+        "theme-default": {
+           "showLevel": false
+         },
+
+        "anchor-navigation-ex": {
+            "showGoTop":true,
+            "float": { 
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            }
+        },
 
         "donate": {
             "wechat": "./pic/wechatpay.jpg",

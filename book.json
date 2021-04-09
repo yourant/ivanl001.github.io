@@ -46,8 +46,8 @@
     "pluginsConfig": {
 
         "donate": {
-            "wechat": "wechatpay.jpg",
-            "alipay": "alipay.jpg",
+            "wechat": "./pic/wechatpay.jpg",
+            "alipay": "./pic/alipay.jpg",
             "title": "",
             "button": "赏",
             "alipayText": "支付宝",
@@ -55,8 +55,8 @@
         },
 
         "favicon-absolute": {
-            "favicon": "favicon.ico",
-            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png"
+            "favicon": "./pic/favicon.ico",
+            "appleTouchIconPrecomposed152": "./pic/apple-touch-icon-precomposed-152.png"
         },
 
         "toc": {
@@ -66,7 +66,7 @@
 
 
         "copyright": {
-            "site": "https://github.com/ivanl001/blog.git",
+            "site": "https://ivanl001.github.io",
             "author": "不二",
             "website": "不二技术博客",
             "image": "",
@@ -76,7 +76,7 @@
         "github-buttons": {
             "buttons": [{
                 "user": "ivanl001",
-                "repo": "https://github.com/ivanl001/blog.git",
+                "repo": "ivanl001.github.io.git",
                 "type": "star",
                 "size": "small"
             }]
@@ -116,11 +116,11 @@
 
         "edit-link-plus": {
             "base": {
-              "snowdreams1006.github.io":"https://github.com/snowdreams1006/snowdreams1006.github.io/edit/master",
-              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/snowdreams1006.gitlab.io/edit/master",
-              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/snowdreams1006/edit/master"
+              "ivanl001.github.io":"https://github.com/ivanl001/ivanl001.github.io/edit/master",
+              "ivanl001.gitlab.io":"https://gitlab.com/ivanl001/ivanl001.gitlab.io/edit/master",
+              "ivanl001.gitee.io":""
             },
-            "defaultBase": "https://github.com/snowdreams1006/snowdreams1006.github.io/edit/master",
+            "defaultBase": "https://github.com/ivanl001/ivanl001.github.io/edit/master",
             "label": "编辑本页"
         },
 

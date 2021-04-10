@@ -30,10 +30,18 @@ git push --set-upstream gitee pages
 
 ```shell
 # 我仓库中默认是github, 为original, 这里再添加gitlab仓库
-git remote add gitlab git@gitlab.com:bool_learning/learning_notebook.git
+git remote add gitlab https://gitlab.com/bool_learning/learning_notebook.git
 
 # 推送的时候
+# 查看远程仓库
+git remote
+# 查看远程仓库的具体内容
+git remote -v 
+
 git push -u origin
-git push -u gitee
+git push -u gitlab
+
+
+git push -u origin master
 ```
 

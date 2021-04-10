@@ -80,3 +80,4 @@ origin	https://gitlab.com/bool_learning/learning_notebook.git (push)
 
 
 
+git push origin

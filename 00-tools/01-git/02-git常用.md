@@ -24,3 +24,16 @@ git checkout -b pages
 git push --set-upstream gitee pages
 ```
 
+
+
+## git同时推送到多个仓库
+
+```shell
+# 我仓库中默认是github, 为original, 这里再添加gitlab仓库
+git remote add gitlab git@gitlab.com:bool_learning/learning_notebook.git
+
+# 推送的时候
+git push -u origin
+git push -u gitee
+```
+

@@ -60,8 +60,8 @@
         },
 
         "donate": {
-            "wechat": "./pic/wechatpay.jpg",
-            "alipay": "./pic/alipay.jpg",
+            "wechat": "https://learningnotebookv1-1302566743.cos.ap-nanjing.myqcloud.com/img/20210410173332.png",
+            "alipay": "https://learningnotebookv1-1302566743.cos.ap-nanjing.myqcloud.com/img/20210410173450.png",
             "title": "",
             "button": "赏",
             "alipayText": "支付宝",
@@ -69,8 +69,8 @@
         },
 
         "favicon-absolute": {
-            "favicon": "./pic/favicon.ico",
-            "appleTouchIconPrecomposed152": "./pic/apple-touch-icon-precomposed-152.png"
+            "favicon": "",
+            "appleTouchIconPrecomposed152": ""
         },
 
         "toc": {

@@ -1,8 +1,6 @@
-# Summary
-
 * [简介](README.md)
 
-## 入门教程
+## 工具相关
 
 * [00-工具相关](00-tools/about.md)
   * [01-git](00-tools/01-git/about.md)
@@ -15,6 +13,4 @@
 * [01-算法](01-algthrim/about.md)
   * [01-算法基础](01-algthrim/01-basic/about.md)
     * [01-leecode刷题](01-algthrim/01-basic/01-leetcode刷题.md)
-
-
 

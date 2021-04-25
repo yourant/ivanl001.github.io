@@ -13,4 +13,6 @@
 * [01-算法](01-algthrim/about.md)
   * [01-算法基础](01-algthrim/01-basic/about.md)
     * [01-leecode刷题](01-algthrim/01-basic/01-leetcode刷题.md)
-
+  * [02-徐培城教程](01-algthrim/02-xupeicheng/about.md)
+    * [01-数据结构01](01-algthrim/02-xupeicheng/01-数据结构01.md)
+    * [02-算法01](01-algthrim/02-xupeicheng/02-算法01.md)

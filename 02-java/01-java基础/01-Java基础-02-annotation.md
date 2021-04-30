@@ -40,17 +40,28 @@
 
 
 
-## 3, 注解讲解
+## 3, 注解定义
 
 ### 3.1, 注解的本质
 
-* 通过编译注解，然后再反编译出来，可以看到注解其实就是一个接口
+```java
+@Target({ElementType.METHOD,ElementType.FIELD})
+public @interface AnnoDemo01 {
+  	// 这里其实是成员方法，因为使用的时候按照属性设置，所以也称为注解的成员属性
+    int sex();
+}
+```
+
+
+
+* 通过编译注解，然后再反编译(javap)出来，可以看到注解其实就是一个接口
 
 ```java
 
 Compiled from "AnnoDemo01.java"
 // 注解的本质就是一个接口，该接口默认继承java.lang.annotation.Annotation
 public interface org.bool.a_annotation.AnnoDemo01 extends java.lang.annotation.Annotation {
+  public abstract int sex();
 }
 ```
 
@@ -89,9 +100,11 @@ public interface org.bool.a_annotation.AnnoDemo01 extends java.lang.annotation.A
   * ElementType.METHOD： 作用在方法上
   * ElementType.FIELD：作用在成员变量上
 
-```
+```java
 @Target({ElementType.METHOD,ElementType.FIELD})
 public @interface AnnoDemo01 {
+  
+  	// 这里其实是成员方法，因为使用的时候按照属性设置，所以也称为注解的成员属性
     int sex();
 }
 ```
@@ -101,4 +114,16 @@ public @interface AnnoDemo01 {
   * RetentionPolicy.CLASS     ：保留到class文件中，但不会被jvm读取到
   * RetentionPolicy.RUNTIME ：  保留到运行时状态，并会被JVM读取到
 * @Documented表明注解是否将被抽取到api文档中
+
+## 4, 注解的解析使用
+
+* 注解大多数都是替换配置文件的
+
+* 注解给谁用：
+  * 编译器
+  * 给解析程序用
+* 注解不是程序的一部分， 只是相当于是一个标签。注解大多时候只是帮助生成正确程序的一个手段而已
+
+* 使用的代码参考
+  * [04-reflect和annotation综合案例-实现失败重试](04-reflect和annotation综合案例-实现失败重试.md)
 

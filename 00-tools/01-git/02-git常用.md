@@ -28,6 +28,9 @@ git push --set-upstream gitee pages
 
 ## git同时推送到多个仓库
 
+* --allow-unrelated-histories
+* 有时候提示atal: refusing to merge unrelated histories的时候可以添加参数：--allow-unrelated-histories
+
 ```shell
 # 我仓库中默认是github, 为original, 这里再添加gitlab仓库
 #  方法1，push的时候需要单独push

@@ -50,7 +50,7 @@
          },
 
         "anchor-navigation-ex": {
-            "showGoTop":false,
+            "showGoTop":true,
             "float": { 
                 "showLevelIcon": false,
                 "level1Icon": "fa fa-hand-o-right",

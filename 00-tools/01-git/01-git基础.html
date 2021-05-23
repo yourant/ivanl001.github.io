@@ -1,0 +1,759 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01-git基础 · 不二技术博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="不二">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-git常用.html" />
+    
+    
+    <link rel="prev" href="about.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"ivanl001","repo":"ivanl001.github.io.git","type":"star","size":"small"}]};
+    </script>
+
+    
+    
+    
+    
+    
+        
+    
+    
+        
+    
+
+    
+    <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/ivanl001" target="_blank" class="custom-link">github</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://gitlab.com/ivanl001" target="_blank" class="custom-link">gitlab</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://gitee.com/ivanl001" target="_blank" class="custom-link">gitee</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">工具相关</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../about.html">
+            
+                <a href="../about.html">
+            
+                    
+                    00-工具相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                    01-git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1.1.1" data-path="01-git基础.html">
+            
+                <a href="01-git基础.html">
+            
+                    
+                    01-git基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="02-git常用.html">
+            
+                <a href="02-git常用.html">
+            
+                    
+                    02-git常用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../02-blog/about.html">
+            
+                <a href="../02-blog/about.html">
+            
+                    
+                    02-blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">算法相关</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../01-algthrim/about.html">
+            
+                <a href="../../01-algthrim/about.html">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../01-algthrim/01-basic/about.html">
+            
+                <a href="../../01-algthrim/01-basic/about.html">
+            
+                    
+                    01-算法基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../../01-algthrim/01-basic/01-leetcode刷题.html">
+            
+                <a href="../../01-algthrim/01-basic/01-leetcode刷题.html">
+            
+                    
+                    01-leecode刷题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../01-algthrim/02-hanshunping/about.html">
+            
+                <a href="../../01-algthrim/02-hanshunping/about.html">
+            
+                    
+                    02-韩顺平教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../01-algthrim/02-hanshunping/01-数据结构-01-线形数据结构.html">
+            
+                <a href="../../01-algthrim/02-hanshunping/01-数据结构-01-线形数据结构.html">
+            
+                    
+                    01-数据结构-01-线形数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../01-algthrim/02-hanshunping/01-数据结构-02-非线形数据结构.html">
+            
+                <a href="../../01-algthrim/02-hanshunping/01-数据结构-02-非线形数据结构.html">
+            
+                    
+                    01-数据结构-02-非线形数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../../01-algthrim/02-hanshunping/02-算法01-常用的八大排序算法.html">
+            
+                <a href="../../01-algthrim/02-hanshunping/02-算法01-常用的八大排序算法.html">
+            
+                    
+                    02-算法01-常用的八大排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../../01-algthrim/02-hanshunping/02-算法02-常用的查找算法.html">
+            
+                <a href="../../01-algthrim/02-hanshunping/02-算法02-常用的查找算法.html">
+            
+                    
+                    02-算法02-常用的查找算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../../01-algthrim/02-hanshunping/02-算法03-程序员常用的十种算法.html">
+            
+                <a href="../../01-algthrim/02-hanshunping/02-算法03-程序员常用的十种算法.html">
+            
+                    
+                    02-算法03-程序员常用的十种算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+
+    
+    <li>
+        
+        
+        
+            
+        
+        
+            <a href="http://www.beian.gov.cn/" target="blank" class="gitbook-link">
+                沪ICP备00000000号(无)
+            </a>
+        
+    </li>
+    
+</ul>
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >01-git基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#rebase&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;"><b>1.1.1. </b>rebase&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x547D;&#x4EE4;&#x884C;merge&#x5206;&#x652F;&#xFF1F;"><b>1.1.2. </b>&#x547D;&#x4EE4;&#x884C;merge&#x5206;&#x652F;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#git&#x7248;&#x672C;&#x56DE;&#x9000;"><b>1.1.3. </b>git&#x7248;&#x672C;&#x56DE;&#x9000;</a></li><li><span class="title-icon "></span><a href="#git-&#x89E3;&#x51B3;&#x51B2;&#x7A81;"><b>1.1.4. </b>git &#x89E3;&#x51B3;&#x51B2;&#x7A81;</a></li><li><span class="title-icon "></span><a href="#git&#x7684;stash&#x7684;&#x4F5C;&#x7528;"><b>1.1.5. </b>git&#x7684;stash&#x7684;&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#git&#x5207;&#x6362;&#x5206;&#x652F;"><b>1.1.6. </b>git&#x5207;&#x6362;&#x5206;&#x652F;</a></li><li><span class="title-icon "></span><a href="#tag&#x7684;&#x4F5C;&#x7528;"><b>1.1.7. </b>tag&#x7684;&#x4F5C;&#x7528;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>[toc]</p>
+<h3 id="rebase&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;"><a name="rebase&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#rebase&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. rebase&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;</h3>
+<h3 id="&#x547D;&#x4EE4;&#x884C;merge&#x5206;&#x652F;&#xFF1F;"><a name="&#x547D;&#x4EE4;&#x884C;merge&#x5206;&#x652F;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x547D;&#x4EE4;&#x884C;merge&#x5206;&#x652F;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x547D;&#x4EE4;&#x884C;merge&#x5206;&#x652F;&#xFF1F;</h3>
+<h3 id="git&#x7248;&#x672C;&#x56DE;&#x9000;"><a name="git&#x7248;&#x672C;&#x56DE;&#x9000;" class="anchor-navigation-ex-anchor" href="#git&#x7248;&#x672C;&#x56DE;&#x9000;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. git&#x7248;&#x672C;&#x56DE;&#x9000;</h3>
+<h4 id="&#x67E5;&#x770B;commit&#x65E5;&#x5FD7;"><a name="&#x67E5;&#x770B;commit&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;commit&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;commit&#x65E5;&#x5FD7;</h4>
+<pre><code class="lang-shell">git log --pretty=oneline
+</code></pre>
+<h4 id="&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x5F80;&#x524D;&#x56DE;&#x9000;&#x4E00;&#x4E2A;&#x7248;&#x672C;"><a name="&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x5F80;&#x524D;&#x56DE;&#x9000;&#x4E00;&#x4E2A;&#x7248;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x5F80;&#x524D;&#x56DE;&#x9000;&#x4E00;&#x4E2A;&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x5F80;&#x524D;&#x56DE;&#x9000;&#x4E00;&#x4E2A;&#x7248;&#x672C;</h4>
+<pre><code class="lang-shell">git reset --hard HEAD^
+</code></pre>
+<h4 id="&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x56DE;&#x9000;&#x5230;&#x6307;&#x5B9A;&#x7248;&#x672C;"><a name="&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x56DE;&#x9000;&#x5230;&#x6307;&#x5B9A;&#x7248;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x56DE;&#x9000;&#x5230;&#x6307;&#x5B9A;&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x56DE;&#x9000;&#x5230;&#x6307;&#x5B9A;&#x7248;&#x672C;</h4>
+<pre><code class="lang-shell">git reset --hard 51ece7a6074122fe17e9d7d08ffdb97f2678b461
+</code></pre>
+<h4 id="&#x5982;&#x679C;&#x60F3;&#x8981;&#x91CD;&#x65B0;&#x56DE;&#x5230;&#x540E;&#x7EED;&#x7248;&#x672C;"><a name="&#x5982;&#x679C;&#x60F3;&#x8981;&#x91CD;&#x65B0;&#x56DE;&#x5230;&#x540E;&#x7EED;&#x7248;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x679C;&#x60F3;&#x8981;&#x91CD;&#x65B0;&#x56DE;&#x5230;&#x540E;&#x7EED;&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x679C;&#x60F3;&#x8981;&#x91CD;&#x65B0;&#x56DE;&#x5230;&#x540E;&#x7EED;&#x7248;&#x672C;</h4>
+<pre><code class="lang-shell"> git reflog
+ git reset --hard ****
+</code></pre>
+<h4 id="&#x603B;&#x7ED3;"><a name="&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x603B;&#x7ED3;</h4>
+<pre><code class="lang-shell">&#x73B0;&#x5728;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#xFF1A;
+
+HEAD&#x6307;&#x5411;&#x7684;&#x7248;&#x672C;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x7248;&#x672C;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;Git&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5728;&#x7248;&#x672C;&#x7684;&#x5386;&#x53F2;&#x4E4B;&#x95F4;&#x7A7F;&#x68AD;&#xFF0C;&#x4F7F;&#x7528;&#x547D;&#x4EE4;git reset --hard commit_id&#x3002;
+&#x7A7F;&#x68AD;&#x524D;&#xFF0C;&#x7528;git log&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#xFF0C;&#x4EE5;&#x4FBF;&#x786E;&#x5B9A;&#x8981;&#x56DE;&#x9000;&#x5230;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x3002;
+&#x8981;&#x91CD;&#x8FD4;&#x672A;&#x6765;&#xFF0C;&#x7528;git reflog&#x67E5;&#x770B;&#x547D;&#x4EE4;&#x5386;&#x53F2;&#xFF0C;&#x4EE5;&#x4FBF;&#x786E;&#x5B9A;&#x8981;&#x56DE;&#x5230;&#x672A;&#x6765;&#x7684;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x3002;
+</code></pre>
+<h4 id="&#x53E6;&#x5916;git&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x56DE;&#x9000;"><a name="&#x53E6;&#x5916;git&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x56DE;&#x9000;" class="anchor-navigation-ex-anchor" href="#&#x53E6;&#x5916;git&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x56DE;&#x9000;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53E6;&#x5916;git&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x56DE;&#x9000;</h4>
+<pre><code class="lang-shell">#  &#x627E;&#x5230;&#x7248;&#x672C;&#x53F7;
+git log --pretty=oneline
+
+# &#x672C;&#x5730;&#x56DE;&#x9000;&#x5230;&#x8BE5;&#x7248;&#x672C;
+git reset --hard ***
+
+# &#x5F3A;&#x5236;&#x56DE;&#x9000;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x5230;&#x5F53;&#x524D;&#x7248;&#x672C;
+git push -f
+</code></pre>
+<h3 id="git-&#x89E3;&#x51B3;&#x51B2;&#x7A81;"><a name="git-&#x89E3;&#x51B3;&#x51B2;&#x7A81;" class="anchor-navigation-ex-anchor" href="#git-&#x89E3;&#x51B3;&#x51B2;&#x7A81;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. git &#x89E3;&#x51B3;&#x51B2;&#x7A81;</h3>
+<h4 id="1&#xFF0C;git-push&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x51B2;&#x7A81;"><a name="1&#xFF0C;git-push&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x51B2;&#x7A81;" class="anchor-navigation-ex-anchor" href="#1&#xFF0C;git-push&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x51B2;&#x7A81;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#xFF0C;git push&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x51B2;&#x7A81;</h4>
+<pre><code class="lang-shell"># git &#x5982;&#x679C;&#x5728;push&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;push&#x4E0D;&#x4E0A;&#x53BB;&#xFF0C;&#x5148;&#x62C9;&#x53D6;&#x4E00;&#x6B21;
+git pull
+
+# &#x62C9;&#x53D6;&#x4E4B;&#x540E;&#x4F1A;&#x6709;&#x63D0;&#x793A;&#xFF0C;&#x8BF4;&#x6587;&#x4EF6;&#x6709;&#x51B2;&#x7A81;&#xFF0C; &#x901A;&#x8FC7;status&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x6709;&#x51B2;&#x7A81;&#x7684;&#x6587;&#x4EF6;
+git status
+
+# &#x7136;&#x540E;vim&#x8BE5;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x5373;&#x53EF;
+
+# &#x4FEE;&#x6539;&#x5B8C;&#x6210;&#x540E;,&#x91CD;&#x65B0;&#x628A;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x6DFB;&#x52A0;&#x5230;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x5E76;&#x63D0;&#x4EA4;&#x5373;&#x53EF;
+git add .
+git commit -m &apos;merge finished&apos;
+git push
+</code></pre>
+<h4 id="2-git-pull&#x62C9;&#x53D6;&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x6709;&#x51B2;&#x7A81;"><a name="2-git-pull&#x62C9;&#x53D6;&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x6709;&#x51B2;&#x7A81;" class="anchor-navigation-ex-anchor" href="#2-git-pull&#x62C9;&#x53D6;&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x6709;&#x51B2;&#x7A81;"><i class="fa fa-link" aria-hidden="true"></i></a>2, git pull&#x62C9;&#x53D6;&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x6709;&#x51B2;&#x7A81;</h4>
+<p>&#x8FD9;&#x4E2A;&#x548C;&#x4E0A;&#x9762;&#x7684;&#x533A;&#x522B;&#x662F;&#xFF0C;&#x5148;commit, &#x518D;pull&#x4F1A;&#x652F;&#x6D41;&#x76F4;&#x6D41;&#x5E76;&#x5408;&#x5E76;</p>
+<p>&#x4F46;&#x662F;&#x5148;stash&#x7136;&#x540E;pull&#xFF0C;&#x518D;&#x7136;&#x540E;push&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;&#x652F;&#x6D41;&#x3002;</p>
+<blockquote>
+<p>&#x5199;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD8;&#x672A;&#x63D0;&#x4EA4;&#xFF0C;&#x9700;&#x8981;&#x62C9;&#x53D6;&#x8FDC;&#x7A0B;&#x4EE3;&#x7801;&#xFF0C;&#x53D1;&#x73B0;&#x62C9;&#x53D6;&#x4E0D;&#x4E0B;&#x6765;&#xFF0C;&#x6709;&#x51B2;&#x7A81;</p>
+</blockquote>
+<pre><code class="lang-shell"># &#x5148;&#x628A;&#x5F53;&#x524D;&#x5199;&#x7684;&#x4EE3;&#x7801;stash&#x4E00;&#x4E0B;
+git add .
+git stash
+
+# &#x518D;pull&#x7684;&#x65F6;&#x5019;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;
+git pull
+
+# &#x62C9;&#x53D6;&#x4E0B;&#x6765;&#x540E;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x53D8;&#x6210;&#x8FDC;&#x7A0B;&#x6587;&#x4EF6;&#x4E86;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;git stash pop&#x628A;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x5F39;&#x51FA;
+git stash list
+git stash pop
+
+# &#x7136;&#x540E;&#x4F1A;&#x6709;&#x63D0;&#x793A;&#x51B2;&#x7A81;&#xFF0C;&#x89E3;&#x51B3;&#x51B2;&#x7A81;&#x5373;&#x53EF;
+# &#x89E3;&#x51B3;&#x51B2;&#x7A81;
+
+git add .
+git commit -m &apos;finished(no merge)&apos;
+git push
+</code></pre>
+<h3 id="git&#x7684;stash&#x7684;&#x4F5C;&#x7528;"><a name="git&#x7684;stash&#x7684;&#x4F5C;&#x7528;" class="anchor-navigation-ex-anchor" href="#git&#x7684;stash&#x7684;&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. git&#x7684;stash&#x7684;&#x4F5C;&#x7528;</h3>
+<p>&#x53C2;&#x8003;&#x6587;&#x6863;&#xFF1A;</p>
+<p><a href="https://blog.csdn.net/ForMyQianDuan/article/details/78750434" target="_blank">https://blog.csdn.net/ForMyQianDuan/article/details/78750434</a></p>
+<p><a href="https://blog.csdn.net/kindergarten_sir/article/details/109829115" target="_blank">https://blog.csdn.net/kindergarten_sir/article/details/109829115</a></p>
+<p><code>git stash ----&#x5C06;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x8FDB;&#x5EA6;&#x4FDD;&#x5B58;</code></p>
+<blockquote>
+<p>1, &#x5F53;&#x4F60;&#x6B63;&#x5728;&#x5F53;&#x524D;&#x5206;&#x652F;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x5206;&#x652F;&#x522B;&#x4EBA;&#x4FEE;&#x6539;&#x4E86;&#x4E1C;&#x897F;&#x5E76;&#x63D0;&#x4EA4;&#x5230;&#x8FDC;&#x7A0B;&#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;&#x4F60;&#x653E;&#x5F03;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x8C03;&#x6574;&#x4E00;&#x4E0B;&#x8FDC;&#x7A0B;&#x4E0A;&#x5BF9;&#x65B9;&#x7684;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;stash&#x628A;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x4FDD;&#x5B58;&#x8D77;&#x6765;&#xFF0C;&#x7136;&#x540E;pull&#x5BF9;&#x65B9;&#x4EE3;&#x7801;&#xFF0C;&#x76F4;&#x63A5;&#x8C03;&#x6574;&#xFF0C;push&#x51FA;&#x53BB;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x4E0D;&#x4F1A;push&#x51FA;&#x53BB;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x518D;&#x901A;&#x8FC7;stash pop&#x518D;&#x6062;&#x590D;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x63A5;&#x7740;&#x5199;&#x3002;</p>
+<p>stash&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x4E34;&#x65F6;&#x5B58;&#x50A8;&#x81EA;&#x5DF1;&#x7684;&#x4E34;&#x65F6;&#x4EE3;&#x7801;&#xFF0C;push&#x5230;&#x8FDC;&#x7A0B;&#x7684;&#x64CD;&#x4F5C;&#x4E0D;&#x4F1A;push&#x5F53;&#x524D;&#x81EA;&#x5DF1;&#x7684;&#x4E34;&#x65F6;&#x4EE3;&#x7801;</p>
+<p>2, &#x5F53;&#x4F60;&#x5728;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x4E0A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x76F4;&#x63A5;&#x5207;&#x5230;&#x5176;&#x4ED6;&#x5206;&#x652F;&#x4E0A;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x4F9D;&#x7136;&#x4F1A;&#x5B58;&#x5728;&#x3002;&#x5982;&#x679C;stash&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x95EE;&#x9898;</p>
+</blockquote>
+<p>git stash &#x4FDD;&#x5B58;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x8FDB;&#x5EA6;&#xFF08;&#x9ED8;&#x8BA4;&#x53EA;&#x4F1A;&#x4FDD;&#x5B58;&#x52A0;&#x5165;&#x5230;&#x7248;&#x672C;&#x7BA1;&#x7406;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x672A;&#x88AB;&#x8FFD;&#x8E2A;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x4F1A;&#x5B58;&#x50A8;&#xFF09;
+git stash &#x9700;&#x8981;&#x5728;git add&#x4E4B;&#x524D;&#x6267;&#x884C;(&#x8FD9;&#x4E2A;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x7684;&#x65F6;&#x5019;&#x597D;&#x50CF;&#x9700;&#x8981;&#x5148;add&#x624D;&#x80FD;stash&#x6709;&#x6548;)</p>
+<ul>
+<li><p>&#x4FDD;&#x5B58;</p>
+<pre><code class="lang-sql">git stash <span class="hljs-comment">----&#x5C06;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x8FDB;&#x5EA6;&#x4FDD;&#x5B58;</span>
+</code></pre>
+</li>
+<li><p>&#x67E5;&#x770B;&#x4FDD;&#x5B58;&#x5217;&#x8868;</p>
+<pre><code class="lang-sql">git stash list <span class="hljs-comment">----&#x67E5;&#x770B;&#x6240;&#x6709;&#x4FDD;&#x5B58;&#x7684;&#x8BB0;&#x5F55;&#x5217;&#x8868;&#xFF0C;&#x8BB0;&#x5F55;&#x5217;&#x8868;&#x524D;&#x6709;{&#x5E8F;&#x53F7;}&#x53EF;&#x7528;&#x4E8E;&#x5220;&#x9664;&#x6216;&#x53D6;&#x51FA;&#x3002;</span>
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x4E0D;&#x53EF;&#x91CD;&#x590D;&#x6062;&#x590D;</p>
+<pre><code class="lang-sql">git stash pop stash@{&#x5E8F;&#x53F7;} ----&#x6062;&#x590D;&#xFF0C;{&#x5E8F;&#x53F7;}&#x662F;&#x53EF;&#x9009;&#x9879;&#xFF0C;&#x4E0D;&#x9009;&#x4F1A;&#x5168;&#x90E8;&#x6062;&#x590D;&#x3002;&#x6062;&#x590D;&#x540E;&#x4F1A;&#x4ECE;git stash list&#x4E2D;&#x5220;&#x9664;&#x6389;&#x88AB;&#x6062;&#x590D;&#x7684;&#x9879;&#x3002;
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x53EF;&#x91CD;&#x590D;&#x6062;&#x590D;</p>
+<pre><code class="lang-sql">git stash apply stash@{&#x5E8F;&#x53F7;} ----&#x6062;&#x590D;&#xFF0C;{&#x5E8F;&#x53F7;}&#x662F;&#x53EF;&#x9009;&#x9879;&#xFF0C;&#x4E0D;&#x9009;&#x4F1A;&#x5168;&#x90E8;&#x6062;&#x590D;&#x3002;&#x6062;&#x590D;&#x540E;&#x4E0D;&#x4F1A;&#x4ECE;git stash list&#x4E2D;&#x5220;&#x9664;&#x6389;&#x88AB;&#x6062;&#x590D;&#x7684;&#x9879;&#x3002;
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x5220;&#x9664;&#x67D0;&#x9879;</p>
+<pre><code class="lang-sql">git stash <span class="hljs-keyword">drop</span> stash@{&#x5E8F;&#x53F7;} <span class="hljs-comment">----&#x5220;&#x9664;git stash list&#x4E2D;&#x7684;&#x67D0;&#x9879;&#x4FDD;&#x5B58;&#xFF0C;{&#x5E8F;&#x53F7;}&#x662F;&#x53EF;&#x9009;&#x9879;&#x3002;</span>
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>&#x5220;&#x9664;&#x6240;&#x6709;</p>
+<pre><code class="lang-sql">git stash clear <span class="hljs-comment">----&#x5220;&#x9664;git stash list&#x4E2D;&#x7684;&#x6240;&#x6709;&#x4FDD;&#x5B58;&#x3002;</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="git&#x5207;&#x6362;&#x5206;&#x652F;"><a name="git&#x5207;&#x6362;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#git&#x5207;&#x6362;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. git&#x5207;&#x6362;&#x5206;&#x652F;</h3>
+<h4 id="&#x67E5;&#x770B;&#x8FDC;&#x7A0B;&#x5206;&#x652F;"><a name="&#x67E5;&#x770B;&#x8FDC;&#x7A0B;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x8FDC;&#x7A0B;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x8FDC;&#x7A0B;&#x5206;&#x652F;</h4>
+<pre><code class="lang-shell">git branch -a
+</code></pre>
+<h4 id="&#x67E5;&#x770B;&#x672C;&#x5730;&#x5206;&#x652F;"><a name="&#x67E5;&#x770B;&#x672C;&#x5730;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x672C;&#x5730;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x672C;&#x5730;&#x5206;&#x652F;</h4>
+<pre><code class="lang-shell">git branch
+</code></pre>
+<p>&#x5207;&#x6362;&#x5206;&#x652F;</p>
+<pre><code class="lang-shell">git checkout dev
+</code></pre>
+<h3 id="tag&#x7684;&#x4F5C;&#x7528;"><a name="tag&#x7684;&#x4F5C;&#x7528;" class="anchor-navigation-ex-anchor" href="#tag&#x7684;&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.7. tag&#x7684;&#x4F5C;&#x7528;</h3>
+<pre><code class="lang-shell">tag&#x5C31;&#x50CF;&#x662F;&#x4E00;&#x4E2A;&#x91CC;&#x7A0B;&#x7891;&#x4E00;&#x4E2A;&#x6807;&#x5FD7;&#x4E00;&#x4E2A;&#x70B9;&#xFF0C;branch&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5F81;&#x7A0B;&#x4E00;&#x6761;&#x7EBF;&#xFF1B;
+tag&#x662F;&#x9759;&#x6001;&#x7684;&#xFF0C;branch&#x8981;&#x5411;&#x524D;&#x8D70;&#xFF1B;
+&#x7A33;&#x5B9A;&#x7248;&#x672C;&#x5907;&#x4EFD;&#x7528;tag&#xFF0C;&#x65B0;&#x529F;&#x80FD;&#x591A;&#x4EBA;&#x5F00;&#x53D1;&#x7528;branch&#xFF08;&#x5F00;&#x53D1;&#x5B8C;&#x6210;&#x540E;merge&#x5230;master&#xFF09;&#x3002;
+</code></pre>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
+
+<pre><code class="lang-html">&#x4F5C;&#x8005;: &#x4E0D;&#x4E8C;
+&#x94FE;&#x63A5;: https://ivanl001.github.io/00-tools/01-git/01-git&#x57FA;&#x7840;.html
+&#x6765;&#x6E90;: &#x4E0D;&#x4E8C;&#x6280;&#x672F;&#x535A;&#x5BA2;
+&#x672C;&#x6587;&#x539F;&#x521B;&#x53D1;&#x5E03;&#x4E8E;&#x300C;&#x4E0D;&#x4E8C;&#x6280;&#x672F;&#x535A;&#x5BA2;&#x300D;,&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904;,&#x8C22;&#x8C22;&#x5408;&#x4F5C;!
+</code></pre>
+<p><footer class="page-footer"><span class="copyright">&#xA9; &#x4E0D;&#x4E8C; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;: 
+2021-05-23 13:14:19
+</span></footer></p>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="about.html" class="navigation navigation-prev " aria-label="Previous page: 01-git">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-git常用.html" class="navigation navigation-next " aria-label="Next page: 02-git常用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01-git基础","level":"2.1.1.1","depth":3,"next":{"title":"02-git常用","level":"2.1.1.2","depth":3,"path":"00-tools/01-git/02-git常用.md","ref":"00-tools/01-git/02-git常用.md","articles":[]},"previous":{"title":"01-git","level":"2.1.1","depth":2,"path":"00-tools/01-git/about.md","ref":"00-tools/01-git/about.md","articles":[{"title":"01-git基础","level":"2.1.1.1","depth":3,"path":"00-tools/01-git/01-git基础.md","ref":"00-tools/01-git/01-git基础.md","articles":[]},{"title":"02-git常用","level":"2.1.1.2","depth":3,"path":"00-tools/01-git/02-git常用.md","ref":"00-tools/01-git/02-git常用.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","anchor-navigation-ex","toc","search-plus","splitter","sharing-plus","expandable-chapters-small","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","sitemap-general","copyright","tbfed-pagefooter","mygitalk","donate","icp","diff","simple-mind-map","hide-element","audio_image","mermaid-gb3","baidu-tongji-with-multiple-channel","google-tongji-with-multiple-channel"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy 不二","modify_label":"文件修订时间: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"diff":{"method":"diffChars","options":{},"type":"markdown"},"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{},"url":"https://hm.baidu.com/hm.js"},"splitter":{},"google-tongji-with-multiple-channel":{"multipleChannelConfig":{},"url":"https://www.googletagmanager.com/gtag/js"},"copyright":{"copyProtect":true,"site":"https://ivanl001.github.io","author":"不二","website":"不二技术博客","image":""},"toc":{"addClass":true,"className":"toc"},"edit-link-plus":{"label":"编辑本页","base":{"ivanl001.github.io":"https://github.com/ivanl001/ivanl001.github.io/edit/master","ivanl001.gitlab.io":"https://gitlab.com/ivanl001/ivanl001.gitlab.io/edit/master","ivanl001.gitee.io":""},"defaultBase":"https://github.com/ivanl001/ivanl001.github.io/edit/master"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"donate":{"alipay":"https://learningnotebookv1-1302566743.cos.ap-nanjing.myqcloud.com/img/20210410173450.png","alipayText":"支付宝","button":"赏","title":"","wechat":"https://learningnotebookv1-1302566743.cos.ap-nanjing.myqcloud.com/img/20210410173332.png","wechatText":"微信"},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"","appleTouchIconPrecomposedMore":{},"favicon":""},"sitemap-general":{"prefix":"https://ivanl001.github.io/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"icp":{"link":"http://www.beian.gov.cn/","style":{},"number":"沪ICP备00000000号(无)"},"github-buttons":{"buttons":[{"user":"ivanl001","repo":"ivanl001.github.io.git","type":"star","size":"small"}]},"expandable-chapters-small":{},"mygitalk":{"flipMoveOptions":{},"clientID":"3d8b5499512dfc769dcc","number":-1,"perPage":10,"proxy":"https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token","admin":["ivanl001"],"createIssueManually":false,"distractionFreeMode":false,"repo":"ivanl001.github.io","owner":"ivanl001","enableHotKey":true,"clientSecret":"72387e663a746fd79685ed71a74a99e0c27ba530","pagerDirection":"last","labels":["Gitalk"]},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"colorful","style":{},"type":"markdown"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"不二","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"不二技术博客","language":"zh-hans","links":{"sidebar":{"github":"https://github.com/ivanl001","gitlab":"https://gitlab.com/ivanl001","gitee":"https://gitee.com/ivanl001"}},"gitbook":"3.2.3","description":"不二 搭建的 Gitbook 个人博客"},"file":{"path":"00-tools/01-git/01-git基础.md","mtime":"2021-05-23T13:14:19.413Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-23T13:15:03.896Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link-plus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copyright/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-simple-mind-map/bundle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu-tongji-with-multiple-channel/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-google-tongji-with-multiple-channel/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

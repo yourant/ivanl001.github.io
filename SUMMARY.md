@@ -1,14 +1,16 @@
 * [简介](README.md)
 
-## 工具相关
 
-* [00-工具相关](00-tools/about.md)
-  * [01-git](00-tools/01-git/about.md)
-    * [01-git基础](00-tools/01-git/01-git基础.md)
-    * [02-git常用](00-tools/01-git/02-git常用.md)
-  * [02-blog](00-tools/02-blog/about.md)
 
-## 算法相关
+## 02-mysql相关
+
+
+
+
+
+
+
+## 01-算法相关
 
 * [算法](01-algthrim/about.md)
   
@@ -25,6 +27,16 @@
     * [02-算法02-常用的查找算法](01-algthrim/02-hanshunping/02-算法02-常用的查找算法.md)
     
     * [02-算法03-程序员常用的十种算法](01-algthrim/02-hanshunping/02-算法03-程序员常用的十种算法.md)
-    
-      
+
+## 00-工具相关
+
+* [00-工具相关](00-tools/about.md)
+  * [01-git](00-tools/01-git/about.md)
+    * [01-git基础](00-tools/01-git/01-git基础.md)
+    * [02-git常用](00-tools/01-git/02-git常用.md)
+  * [02-blog](00-tools/02-blog/about.md)
+
+
+​    
+​      
 

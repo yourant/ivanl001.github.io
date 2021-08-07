@@ -10,7 +10,7 @@ hdfs数据写入过程：
 
 - `参考  97/756  [O'REILLY]Hadoop.The.Definitive.Guide.4th.Edition.2015.3`
 
-  - ![IMAGE](assets/9A4CBAC625DF4291925A4FB4202C5349.jpg)
+  - ![IMAGE](./assets/9A4CBAC625DF4291925A4FB4202C5349.jpg)
 
   - `参考  100/756  [O'REILLY]Hadoop.The.Definitive.Guide.4th.Edition.2015.3`
     - ![IMAGE](../%E5%BE%90%E5%9F%B9%E6%88%90%E6%95%99%E7%A8%8B_%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%AC%94%E8%AE%B0/resources/F2B1ACAD321BDEB648E1F47E4B1E4048.jpg)

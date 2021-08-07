@@ -176,6 +176,7 @@ connector.name=jmx
 ### 2.0, 页面验证
 
 * http://nebula02:8090/ui/
+* 
 
 
 

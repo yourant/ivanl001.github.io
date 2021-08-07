@@ -23,7 +23,7 @@ export PATH=$PATH:$MONGODB_HOME/bin
 
 ```shell
 # 前台启动
-mondod
+mongod
 
 # 后台启动
 nohup mongod --bind_ip_all > /dev/null 2>&1 &

@@ -34,6 +34,7 @@ sudo yum install clickhouse-server clickhouse-client
 # 配置允许远程连接
 sudo vim /etc/clickhouse-server/config.xml
 
+
 # 打开下面这一行
 <listen_host>::</listen_host>
 ```
@@ -44,7 +45,7 @@ sudo vim /etc/clickhouse-server/config.xml
 
 ```shell
 # 启动服务
-systemctl start clickhouse-server.service
+systemctl restart clickhouse-server.service
 # 关闭开机启动
 systemctl disable clickhouse-server.service
 
@@ -52,8 +53,8 @@ systemctl disable clickhouse-server.service
 systemctl status clickhouse-server.service
 systemctl status clickhouse-server
 
-# 查看启动端口
-netstat -anop | grep 9000
+# 查看启动端口（端口号默认9000， 有冲突， 改为了9999）
+netstat -anop | grep 9999
 
 
 # 远程连接(远程连接先修改配置允许远程连接)
@@ -61,5 +62,7 @@ clickhouse-client
 
 # 多行操作
 clickhouse-client -m
+# 指定端口号登陆
+clickhouse-client --port 9999 -m
 ```
 
